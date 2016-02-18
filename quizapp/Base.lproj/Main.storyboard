@@ -210,7 +210,7 @@ Can you? Enter your answer in the text box below.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RIDDLE NO.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8j-ss-5eY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="RIDDLE NO.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8j-ss-5eY">
                                 <rect key="frame" x="110" y="63" width="101" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="101" id="1me-Xd-zS6"/>
@@ -225,7 +225,7 @@ Can you? Enter your answer in the text box below.</string>
                                     </mask>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsw-ND-I7W">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nsw-ND-I7W">
                                 <rect key="frame" x="40" y="385" width="240" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="9fs-8t-bof"/>
@@ -239,7 +239,7 @@ Can you? Enter your answer in the text box below.</string>
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-Mf-lTe">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th4-Mf-lTe">
                                 <rect key="frame" x="132" y="423" width="56" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="fs4-5E-Fpt"/>
@@ -254,7 +254,7 @@ Can you? Enter your answer in the text box below.</string>
                                     <segue destination="Vmp-48-pfu" kind="show" id="fG8-ut-yFl"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" Enter your answer in the text box below." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-Qh-FTx">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text=" Enter your answer in the text box below." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-Qh-FTx">
                                 <rect key="frame" x="40" y="278" width="240" height="81"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -269,7 +269,7 @@ Can you? Enter your answer in the text box below.</string>
                                     </mask>
                                 </variation>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maths-Picture-Riddle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H9F-ro-R5x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Maths-Picture-Riddle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H9F-ro-R5x">
                                 <rect key="frame" x="36" y="136" width="249" height="134"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="WLn-cY-LKS"/>
