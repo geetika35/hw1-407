@@ -23,11 +23,7 @@ class secondViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-        
-        let secondVC : lastViewController = segue.destinationViewController
-        as! lastViewController
-        
+        let secondVC : lastViewController = segue.destinationViewController as! lastViewController
         
         secondVC.recvdstring1 = textfield1.text!
     }

@@ -161,7 +161,7 @@ Can you? Enter your answer in the text box below.</string>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="textfield1" destination="ywO-2E-FLz" id="D7r-bB-Yis"/>
+                        <outlet property="textfield1" destination="ywO-2E-FLz" id="lzb-Pl-2me"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EaQ-Ph-f2r" userLabel="First Responder" sceneMemberID="firstResponder"/>

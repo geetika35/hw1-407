@@ -10,7 +10,7 @@
 		A557C4ED1C771E3500E53DFD /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557C4EC1C771E3500E53DFD /* thirdViewController.swift */; };
 		A557C4EF1C771E4D00E53DFD /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557C4EE1C771E4D00E53DFD /* fourthViewController.swift */; };
 		A557C4F31C77223800E53DFD /* lastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557C4F21C77223800E53DFD /* lastViewController.swift */; };
-		A557C4F71C77337D00E53DFD /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557C4F61C77337D00E53DFD /* secondViewController.swift */; };
+		A557C4F91C7739B800E53DFD /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557C4F81C7739B800E53DFD /* secondViewController.swift */; };
 		A55DBDB31C73C917007C94AD /* Maths-Picture-Riddle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A55DBDB21C73C917007C94AD /* Maths-Picture-Riddle.jpg */; };
 		A569541D1C72DEB200134028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569541C1C72DEB200134028 /* AppDelegate.swift */; };
 		A569541F1C72DEB200134028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569541E1C72DEB200134028 /* ViewController.swift */; };
@@ -42,7 +42,7 @@
 		A557C4EC1C771E3500E53DFD /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		A557C4EE1C771E4D00E53DFD /* fourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		A557C4F21C77223800E53DFD /* lastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lastViewController.swift; sourceTree = "<group>"; };
-		A557C4F61C77337D00E53DFD /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		A557C4F81C7739B800E53DFD /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		A55DBDB21C73C917007C94AD /* Maths-Picture-Riddle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Maths-Picture-Riddle.jpg"; path = "../../Maths-Picture-Riddle.jpg"; sourceTree = "<group>"; };
 		A56954191C72DEB200134028 /* quizapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A569541C1C72DEB200134028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,12 +107,12 @@
 		A569541B1C72DEB200134028 /* quizapp */ = {
 			isa = PBXGroup;
 			children = (
-				A557C4F21C77223800E53DFD /* lastViewController.swift */,
-				A557C4F61C77337D00E53DFD /* secondViewController.swift */,
+				A569541E1C72DEB200134028 /* ViewController.swift */,
+				A557C4F81C7739B800E53DFD /* secondViewController.swift */,
 				A557C4EC1C771E3500E53DFD /* thirdViewController.swift */,
 				A557C4EE1C771E4D00E53DFD /* fourthViewController.swift */,
+				A557C4F21C77223800E53DFD /* lastViewController.swift */,
 				A569541C1C72DEB200134028 /* AppDelegate.swift */,
-				A569541E1C72DEB200134028 /* ViewController.swift */,
 				A56954201C72DEB200134028 /* Main.storyboard */,
 				A56954231C72DEB200134028 /* Assets.xcassets */,
 				A55DBDB21C73C917007C94AD /* Maths-Picture-Riddle.jpg */,
@@ -276,7 +276,7 @@
 				A557C4EF1C771E4D00E53DFD /* fourthViewController.swift in Sources */,
 				A569541F1C72DEB200134028 /* ViewController.swift in Sources */,
 				A557C4ED1C771E3500E53DFD /* thirdViewController.swift in Sources */,
-				A557C4F71C77337D00E53DFD /* secondViewController.swift in Sources */,
+				A557C4F91C7739B800E53DFD /* secondViewController.swift in Sources */,
 				A569541D1C72DEB200134028 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
