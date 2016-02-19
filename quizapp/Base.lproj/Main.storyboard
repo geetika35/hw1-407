@@ -25,7 +25,7 @@
                                     <constraint firstAttribute="width" constant="289" id="vug-m2-SMK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-aa-FLp">
@@ -42,9 +42,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click below to start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iw-YH-5RK">
-                                <rect key="frame" x="113" y="173" width="147" height="20.5"/>
+                                <rect key="frame" x="113" y="172" width="147" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="58" y="239"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="8A0-G0-K5O">
             <objects>
-                <viewController id="ena-rU-DEt" sceneMemberID="viewController">
+                <viewController id="ena-rU-DEt" customClass="secondViewController" customModule="quizapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhf-Vz-lhu"/>
                         <viewControllerLayoutGuide type="bottom" id="7wM-Tc-gJA"/>
@@ -134,7 +134,7 @@ Can you? Enter your answer in the text box below.</string>
                                     <constraint firstAttribute="height" constant="21" id="z4y-6c-2Zb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -160,15 +160,18 @@ Can you? Enter your answer in the text box below.</string>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="textfield1" destination="ywO-2E-FLz" id="D7r-bB-Yis"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EaQ-Ph-f2r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847" y="249"/>
         </scene>
-        <!--View Controller-->
+        <!--Last View Controller-->
         <scene sceneID="OCY-39-O7V">
             <objects>
-                <viewController id="Vmp-48-pfu" sceneMemberID="viewController">
+                <viewController id="Vmp-48-pfu" customClass="lastViewController" customModule="quizapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jaN-wb-Z35"/>
                         <viewControllerLayoutGuide type="bottom" id="SfK-JK-j1G"/>
@@ -177,31 +180,115 @@ Can you? Enter your answer in the text box below.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Answers- 1. Chair  2. Cold  3. E" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3QC-2R-Fs4">
-                                <rect key="frame" x="28" y="183" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Answers- 1. Chair  2. Cold  3. E" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3QC-2R-Fs4">
+                                <rect key="frame" x="40" y="183" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Xui-TM-b9S"/>
+                                    <constraint firstAttribute="height" constant="128" id="oUZ-iy-77f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xui-TM-b9S"/>
+                                    </mask>
+                                </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mx2-bt-M55">
-                                <rect key="frame" x="116" y="385" width="65" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buW-oz-vGE">
+                                <rect key="frame" x="139" y="111" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="cGR-zd-N4P"/>
+                                    <constraint firstAttribute="height" constant="21" id="p2N-dJ-OqP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cGR-zd-N4P"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="correct answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSa-Jt-Xwm">
+                                <rect key="frame" x="99" y="140" width="123" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PRd-zM-8i7"/>
+                                    <constraint firstAttribute="width" constant="123" id="w94-xz-4zA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="w94-xz-4zA"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mx2-bt-M55">
+                                <rect key="frame" x="128" y="383" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vhb-Oz-zGL"/>
+                                    <constraint firstAttribute="width" constant="65" id="ZOU-gK-O4o"/>
+                                </constraints>
                                 <state key="normal" title="RESTART"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZOU-gK-O4o"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="JPf-xs-LRx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You got" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-8s-0tb">
+                                <rect key="frame" x="131" y="82" width="59" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7V7-jV-XhF"/>
+                                    <constraint firstAttribute="width" constant="59" id="A9E-1e-Q6I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A9E-1e-Q6I"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.72636546776644706" blue="0.43647259151988482" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="JSa-Jt-Xwm" secondAttribute="trailing" constant="78" id="BNl-gT-PTW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mx2-bt-M55" secondAttribute="trailing" constant="107" id="Fet-Iw-JZX"/>
+                            <constraint firstItem="JSa-Jt-Xwm" firstAttribute="leading" secondItem="XVQ-p5-GIB" secondAttribute="leadingMargin" constant="79" id="HBe-3U-s9E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="buW-oz-vGE" secondAttribute="trailing" constant="119" id="Juq-bk-HQZ"/>
+                            <constraint firstItem="3QC-2R-Fs4" firstAttribute="leading" secondItem="XVQ-p5-GIB" secondAttribute="leadingMargin" constant="20" id="PMU-28-KMj"/>
+                            <constraint firstItem="DTh-8s-0tb" firstAttribute="leading" secondItem="XVQ-p5-GIB" secondAttribute="leadingMargin" constant="111" id="R21-DO-3pj"/>
+                            <constraint firstItem="DTh-8s-0tb" firstAttribute="top" secondItem="jaN-wb-Z35" secondAttribute="bottom" constant="62" id="eTg-EB-Ccn"/>
+                            <constraint firstItem="Mx2-bt-M55" firstAttribute="leading" secondItem="XVQ-p5-GIB" secondAttribute="leadingMargin" constant="108" id="gTC-lG-yoL"/>
+                            <constraint firstItem="3QC-2R-Fs4" firstAttribute="top" secondItem="JSa-Jt-Xwm" secondAttribute="bottom" constant="22" id="it6-sz-v68"/>
+                            <constraint firstItem="buW-oz-vGE" firstAttribute="leading" secondItem="XVQ-p5-GIB" secondAttribute="leadingMargin" constant="119" id="nKX-LJ-D06"/>
+                            <constraint firstItem="JSa-Jt-Xwm" firstAttribute="top" secondItem="buW-oz-vGE" secondAttribute="bottom" constant="8" id="nrC-sm-nvY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3QC-2R-Fs4" secondAttribute="trailing" constant="20" id="oA4-hd-gSC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DTh-8s-0tb" secondAttribute="trailing" constant="110" id="p3b-FM-OEL"/>
+                            <constraint firstItem="buW-oz-vGE" firstAttribute="top" secondItem="DTh-8s-0tb" secondAttribute="bottom" constant="8" id="qQe-UT-UOQ"/>
+                            <constraint firstItem="DTh-8s-0tb" firstAttribute="centerX" secondItem="XVQ-p5-GIB" secondAttribute="centerX" id="qUG-XV-hEl"/>
+                            <constraint firstItem="Mx2-bt-M55" firstAttribute="top" secondItem="3QC-2R-Fs4" secondAttribute="bottom" constant="72" id="xc4-Q7-sRF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labl" destination="buW-oz-vGE" id="P4r-Ac-qXz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J29-hv-LKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290" y="1041"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth View Controller-->
         <scene sceneID="R6z-P1-U3E">
             <objects>
-                <viewController id="ECl-vk-Bne" sceneMemberID="viewController">
+                <viewController id="ECl-vk-Bne" customClass="fourthViewController" customModule="quizapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oOi-cl-9Vl"/>
                         <viewControllerLayoutGuide type="bottom" id="oRk-MB-Ou7"/>
@@ -217,7 +304,7 @@ Can you? Enter your answer in the text box below.</string>
                                     <constraint firstAttribute="height" constant="21" id="nFK-yj-NW6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -301,15 +388,18 @@ Can you? Enter your answer in the text box below.</string>
                             <constraint firstItem="Ore-Qh-FTx" firstAttribute="top" secondItem="H9F-ro-R5x" secondAttribute="bottom" constant="8" symbolic="YES" id="t7i-TI-ksf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textfield3" destination="nsw-ND-I7W" id="ADd-9U-5Mp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkc-hk-ERT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="1041"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="Nne-lz-xhc">
             <objects>
-                <viewController id="HG3-YW-llU" sceneMemberID="viewController">
+                <viewController id="HG3-YW-llU" customClass="thirdViewController" customModule="quizapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KBv-vo-j6L"/>
                         <viewControllerLayoutGuide type="bottom" id="eDL-43-Zs3"/>
@@ -325,7 +415,7 @@ Can you? Enter your answer in the text box below.</string>
                                     <constraint firstAttribute="height" constant="21" id="SnR-UA-oLD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -395,6 +485,9 @@ Can you? Enter your answer in the text box below.</string>
                             <constraint firstItem="jQp-3L-67K" firstAttribute="top" secondItem="ttu-Mg-ljY" secondAttribute="bottom" constant="53" id="zmO-51-dfW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textfield2" destination="jQp-3L-67K" id="x9e-Bw-IHD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zt-QY-uM4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
